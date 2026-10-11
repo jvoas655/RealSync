@@ -1,0 +1,42 @@
+{
+  "archived_baseline_evaluation": [
+    {
+      "all_source_ids_in_canonical_test": true,
+      "artifact": "test_results_0.pkl",
+      "canonical_split": "test",
+      "historical_manifest": "sports_and_news_uniform.test.json",
+      "sample_ids": 4116
+    },
+    {
+      "all_source_ids_in_canonical_test": true,
+      "artifact": "test_results_1.pkl",
+      "canonical_split": "test",
+      "historical_manifest": "sports_and_news_uniform.test.json",
+      "sample_ids": 4111
+    },
+    {
+      "all_source_ids_in_canonical_test": true,
+      "artifact": "test_results_2.pkl",
+      "canonical_split": "test",
+      "historical_manifest": "sports_and_news_uniform.test.json",
+      "sample_ids": 4095
+    },
+    {
+      "all_source_ids_in_canonical_test": true,
+      "artifact": "test_results_3.pkl",
+      "canonical_split": "test",
+      "historical_manifest": "sports_and_news_uniform.test.json",
+      "sample_ids": 4068
+    }
+  ],
+  "canonical_mapping": {
+    "test": "test",
+    "train": "train",
+    "val": "evaluation"
+  },
+  "scope": "archived later baseline population; not certification of every model/run in the paper",
+  "second_server_aliases": {
+    "test": "test",
+    "valid": "evaluation"
+  }
+}

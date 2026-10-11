@@ -54,7 +54,7 @@ def main():
     provenance = []
     sources = {}
     clips = {}
-    mapping = {"train": "train", "val": "test", "test": "evaluation"}
+    mapping = {"train": "train", "val": "evaluation", "test": "test"}
     rows_by_split = {}
     for split, historical in mapping.items():
         meta_path = (

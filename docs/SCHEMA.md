@@ -16,7 +16,7 @@ All times are seconds. Sample floats are the exact values parsed from historical
 | `summary.json` | Counts, labels, annotation coverage, and nominal duration. |
 | `reference_media.jsonl.gz` | Observed prepared-file sizes, stream formats, and container/stream timing headers. No media payloads. |
 
-Historical names map as follows: `train` → train, `test` → validation, `evaluation` → test. This mapping follows the historical StreamSync dataset loader. The cleaned source IDs are disjoint across all three splits.
+Historical manifest names map as follows: `train` → train, `evaluation` → validation, `test` → test. The second-server Synchformer directory aliases `evaluation` as `valid`, and the archived later baseline evaluation uses the historical `test` source population. An older StreamSync loader reverses the validation/test roles; that older code alias is not the canonical release naming. All original names/bytes are preserved in `legacy/`. The cleaned source IDs are disjoint across all three splits.
 
 ## Sample fields
 

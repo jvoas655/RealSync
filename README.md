@@ -15,8 +15,8 @@ The author-selected **cleaned uniform-offset collection** contains 670 source vi
 | Split | Source videos | Samples |
 |---|---:|---:|
 | Train | 511 | 269,890 |
-| Validation | 85 | 16,529 |
-| Test | 74 | 16,944 |
+| Validation | 74 | 16,944 |
+| Test | 85 | 16,529 |
 
 No source video is shared between splits. Sample positions and continuous offsets are preserved exactly. Effective offsets are rounded to two decimals, then classified on the historical 21-class float32 grid between −2 and +2 seconds. Positive offsets extract audio from a later source time: the audible event leads its visual counterpart.
 

@@ -13,18 +13,6 @@
       "sha256": "58b1bcf7b051ff4bde6a35deaae184da965f4e8a958bc5de63b02a5b9e1c99be"
     },
     {
-      "artifact": "full_metadata_clean_videos.target_channels.test.json",
-      "sha256": "3b51264f1678292ee56eae4f5f06abdb73c7cb279eed85bd3bfb38fa1b55161a"
-    },
-    {
-      "artifact": "sports_and_news_uniform.test.json",
-      "sha256": "23053c841e0f930eb196a5a64f29b4470b17f4ccf78318b3ee070729c8294001"
-    },
-    {
-      "artifact": "sports_and_news_uniform.test.csv",
-      "sha256": "fbbda8c4c6fc923c2f4cee66d41705132bf4fc37f5e4d1f33ca214370ee25d3c"
-    },
-    {
       "artifact": "full_metadata_clean_videos.target_channels.evaluation.json",
       "sha256": "4e7f359b4e723bf0201927b302470e36609441fb28911d999f7acc493356c787"
     },
@@ -37,6 +25,18 @@
       "sha256": "4d4a33100ea1f0991d8cfaedc872b1590f6e846ad1debfa796a29b597bca4b83"
     },
     {
+      "artifact": "full_metadata_clean_videos.target_channels.test.json",
+      "sha256": "3b51264f1678292ee56eae4f5f06abdb73c7cb279eed85bd3bfb38fa1b55161a"
+    },
+    {
+      "artifact": "sports_and_news_uniform.test.json",
+      "sha256": "23053c841e0f930eb196a5a64f29b4470b17f4ccf78318b3ee070729c8294001"
+    },
+    {
+      "artifact": "sports_and_news_uniform.test.csv",
+      "sha256": "fbbda8c4c6fc923c2f4cee66d41705132bf4fc37f5e4d1f33ca214370ee25d3c"
+    },
+    {
       "artifact": "TALKING-HEADS.txt",
       "sha256": "1b6b212f7bd2a10032fa95060b725527b34297da454ca772b17a6eb686ad7f10"
     },
@@ -46,9 +46,9 @@
     }
   ],
   "historical_split_mapping": {
-    "test": "evaluation",
+    "test": "test",
     "train": "train",
-    "val": "test"
+    "val": "evaluation"
   },
   "selection": "author-confirmed cleaned uniform-offset set"
 }

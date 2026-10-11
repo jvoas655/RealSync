@@ -20,7 +20,7 @@ def main():
     args = parser.parse_args()
     report = Manifest(args.manifests).audit()
     report["sample_roundtrip"] = {}
-    for split, old in [("train", "train"), ("val", "test"), ("test", "evaluation")]:
+    for split, old in [("train", "train"), ("val", "evaluation"), ("test", "test")]:
         source = args.historical / f"sports_and_news_uniform.{old}.json"
         data = json.loads(source.read_text())
         rows = list(read_jsonl(args.manifests / f"{split}.jsonl.gz"))
