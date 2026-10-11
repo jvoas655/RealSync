@@ -1,0 +1,23 @@
+[
+  {
+    "clip_id": "EYX_ijEC-ps_0_300",
+    "packet_count": 12138,
+    "regenerated_packet_sequence_sha256": "ceabcd1926d63d5d33b65b4aab2a8e4fad0cc705f103c9ccae925e3e4a29073d",
+    "reference_packet_sequence_sha256": "ceabcd1926d63d5d33b65b4aab2a8e4fad0cc705f103c9ccae925e3e4a29073d",
+    "all_packets_and_timestamps_exact": true
+  },
+  {
+    "clip_id": "EYX_ijEC-ps_1800_2100",
+    "packet_count": 12325,
+    "regenerated_packet_sequence_sha256": "2cfefa277ad618121da51e842c1be3fe13f01a0f4613104736b18cef7e650035",
+    "reference_packet_sequence_sha256": "2cfefa277ad618121da51e842c1be3fe13f01a0f4613104736b18cef7e650035",
+    "all_packets_and_timestamps_exact": true
+  },
+  {
+    "clip_id": "EYX_ijEC-ps_900_1200",
+    "packet_count": 12260,
+    "regenerated_packet_sequence_sha256": "11471a9aa42ad921656509027cc59086fe2c9bbb7f400bc84f8d3a15f5e3b8c9",
+    "reference_packet_sequence_sha256": "11471a9aa42ad921656509027cc59086fe2c9bbb7f400bc84f8d3a15f5e3b8c9",
+    "all_packets_and_timestamps_exact": true
+  }
+]

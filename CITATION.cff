@@ -1,0 +1,46 @@
+cff-version: 1.2.0
+message: "Please cite the WACV 2025 paper and report the RealSync release tag/commit used."
+type: dataset
+title: "RealSync: cleaned uniform-offset metadata and reconstruction tooling"
+version: 0.1.0
+url: "https://github.com/jvoas655/RealSync"
+authors:
+  - family-names: Voas
+    given-names: Jordan
+  - family-names: Tseng
+    given-names: Wei-Cheng
+  - family-names: Berry
+    given-names: Layne
+  - family-names: Hu
+    given-names: Xixi
+  - family-names: Peng
+    given-names: Puyuan
+  - family-names: Stuedemann
+    given-names: James
+  - family-names: Harwath
+    given-names: David
+preferred-citation:
+  type: conference-paper
+  title: "Temporally Streaming Audio-Visual Synchronization for Real-World Videos"
+  year: 2025
+  month: 2
+  start: 5009
+  end: 5017
+  conference:
+    name: "IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)"
+  url: "https://openaccess.thecvf.com/content/WACV2025/papers/Voas_Temporally_Streaming_Audio-Visual_Synchronization_for_Real-World_Videos_WACV_2025_paper.pdf"
+  authors:
+    - family-names: Voas
+      given-names: Jordan
+    - family-names: Tseng
+      given-names: Wei-Cheng
+    - family-names: Berry
+      given-names: Layne
+    - family-names: Hu
+      given-names: Xixi
+    - family-names: Peng
+      given-names: Puyuan
+    - family-names: Stuedemann
+      given-names: James
+    - family-names: Harwath
+      given-names: David

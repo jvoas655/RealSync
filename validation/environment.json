@@ -1,0 +1,24 @@
+{
+  "python": "3.11.5",
+  "platform": "Linux-6.8.0-124-generic-x86_64-with-glibc2.35",
+  "ffmpeg_version": "ffmpeg version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2000-2021 the FFmpeg developers",
+  "ffmpeg_executable_sha256": "36d94a605d612e4090d1b8aec889d0c0801c6eafb1593c90f5c0dfd2e2966a45",
+  "ffprobe_executable_sha256": "d4f3ef9c12be756793cad83dd2004d89f49c1c4094053bfbbe7e28925c8fa4fd",
+  "system_packages": [
+    "ffmpeg 7:4.4.2-0ubuntu0.22.04.1",
+    "libavcodec58 7:4.4.2-0ubuntu0.22.04.1",
+    "libavformat58 7:4.4.2-0ubuntu0.22.04.1",
+    "libavutil56 7:4.4.2-0ubuntu0.22.04.1",
+    "libswresample3 7:4.4.2-0ubuntu0.22.04.1",
+    "libswscale5 7:4.4.2-0ubuntu0.22.04.1",
+    "libx264-163 2:0.163.3060+git5db6aa6-2build1"
+  ],
+  "python_packages": {
+    "numpy": "1.24.3",
+    "scikit-learn": "1.3.0",
+    "scipy": "1.11.1",
+    "joblib": "1.2.0",
+    "threadpoolctl": "2.2.0"
+  },
+  "validation_scope": "manifest equivalence, strict reader tests, and copy-crop packet equivalence; not full-source reconstruction"
+}

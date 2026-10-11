@@ -1,0 +1,6 @@
+# Versions used for local CPU reader/evaluation validation; Python 3.11.5.
+numpy==1.24.3
+scikit-learn==1.3.0
+scipy==1.11.1
+joblib==1.2.0
+threadpoolctl==2.2.0

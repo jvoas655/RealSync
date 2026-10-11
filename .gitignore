@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+build/
+dist/
+local/
+media/
+*.mkv
+*.mp4
+*.wav
+*.mp3
+*.webm
+*.pt
+*.pkl
+*.info.json

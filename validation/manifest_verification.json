@@ -1,0 +1,114 @@
+{
+  "clips": 11039,
+  "sample_roundtrip": {
+    "test": {
+      "historical_csv_bytes_exact": true,
+      "historical_json_bytes_exact": true,
+      "historical_sha256": "14f6738262dadd59437dabb9fced639055a77bf14de10e6eb552cbd41be998ed",
+      "samples": 16944,
+      "stored_values_exact": true
+    },
+    "train": {
+      "historical_csv_bytes_exact": true,
+      "historical_json_bytes_exact": true,
+      "historical_sha256": "1c9d18473f90c7f971de0b8401a9095131cc87a8594786c08deabc6c3f0406fb",
+      "samples": 269890,
+      "stored_values_exact": true
+    },
+    "val": {
+      "historical_csv_bytes_exact": true,
+      "historical_json_bytes_exact": true,
+      "historical_sha256": "23053c841e0f930eb196a5a64f29b4470b17f4ccf78318b3ee070729c8294001",
+      "samples": 16529,
+      "stored_values_exact": true
+    }
+  },
+  "sources": 670,
+  "splits": {
+    "test": {
+      "classes": {
+        "0": 401,
+        "1": 850,
+        "2": 846,
+        "3": 820,
+        "4": 900,
+        "5": 819,
+        "6": 814,
+        "7": 866,
+        "8": 898,
+        "9": 828,
+        "10": 905,
+        "11": 805,
+        "12": 916,
+        "13": 855,
+        "14": 857,
+        "15": 814,
+        "16": 857,
+        "17": 824,
+        "18": 749,
+        "19": 918,
+        "20": 402
+      },
+      "samples": 16944,
+      "sources": 74
+    },
+    "train": {
+      "classes": {
+        "0": 7086,
+        "1": 13361,
+        "2": 13259,
+        "3": 12883,
+        "4": 14003,
+        "5": 12763,
+        "6": 13506,
+        "7": 13777,
+        "8": 14045,
+        "9": 13600,
+        "10": 13378,
+        "11": 12961,
+        "12": 14137,
+        "13": 13509,
+        "14": 13503,
+        "15": 13487,
+        "16": 13592,
+        "17": 13517,
+        "18": 12790,
+        "19": 14196,
+        "20": 6537
+      },
+      "samples": 269890,
+      "sources": 511
+    },
+    "val": {
+      "classes": {
+        "0": 410,
+        "1": 835,
+        "2": 840,
+        "3": 787,
+        "4": 831,
+        "5": 780,
+        "6": 821,
+        "7": 827,
+        "8": 845,
+        "9": 805,
+        "10": 774,
+        "11": 768,
+        "12": 939,
+        "13": 840,
+        "14": 881,
+        "15": 827,
+        "16": 842,
+        "17": 822,
+        "18": 759,
+        "19": 877,
+        "20": 419
+      },
+      "samples": 16529,
+      "sources": 85
+    }
+  },
+  "torch_float32_class_equivalence": {
+    "passed": true,
+    "samples": 303363
+  }
+}
