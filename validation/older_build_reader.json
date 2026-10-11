@@ -1,0 +1,16 @@
+{
+  "audio_exact": true,
+  "audio_rms_difference": 0.0,
+  "audio_samples": 80000,
+  "frames": 125,
+  "mean_absolute_video_difference_0_255": 0.0,
+  "rebuilt_audio_sha256": "20fcd07f61fdd869d3b7a90ce81ab6513a05bdbea1ac10ef18e6bcc095c5289b",
+  "rebuilt_video_sha256": "ab0c279ba816fa69409d1230d751b4d924d5a025dfb4ec06e50e0201f1b28834",
+  "reference_audio_sha256": "20fcd07f61fdd869d3b7a90ce81ab6513a05bdbea1ac10ef18e6bcc095c5289b",
+  "reference_video_sha256": "ab0c279ba816fa69409d1230d751b4d924d5a025dfb4ec06e50e0201f1b28834",
+  "repeat_read_exact": true,
+  "sample_id": "EYX_ijEC-ps_900_1200_20_0",
+  "stored_offset_sec": 1.4140697669317777,
+  "video_exact": true,
+  "video_start_sec": 20.0
+}

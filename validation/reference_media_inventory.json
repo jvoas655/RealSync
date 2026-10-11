@@ -1,0 +1,34 @@
+{
+  "clips_present_and_probed": 11039,
+  "estimated_complete_windows_from_historical_track_lengths": {
+    "test": {
+      "39": 15217,
+      "5": 16944
+    },
+    "train": {
+      "39": 242521,
+      "5": 269890
+    },
+    "val": {
+      "39": 14824,
+      "5": 16529
+    }
+  },
+  "format_counts": [
+    {
+      "clips": 11039,
+      "format": [
+        "h264",
+        "25/1",
+        256,
+        "aac",
+        "16000",
+        1
+      ]
+    }
+  ],
+  "missing_or_unreadable": 0,
+  "prepared_bytes": 567489556528,
+  "scope": "file presence and header formats; not exhaustive decoding or source-origin equivalence",
+  "unexpected_format_clips": []
+}

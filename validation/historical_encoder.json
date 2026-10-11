@@ -1,0 +1,8 @@
+{
+  "clip_id": "EYX_ijEC-ps_900_1200",
+  "x264_identity_and_options": "",
+  "observed_encoder_threads": 8,
+  "video_encoder_library": "Lavc58.54.100",
+  "container_writer_library": "Lavf58.29.100",
+  "scope": "one stored encoded segment; remaining clips may have different encoder threading/settings"
+}

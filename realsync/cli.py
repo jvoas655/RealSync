@@ -91,6 +91,9 @@ def main(argv=None):
         required=True,
     )
     prep.add_argument("--clip-id", action="append")
+    prep.add_argument("--ffmpeg", default="ffmpeg")
+    prep.add_argument("--ffprobe", default="ffprobe")
+    prep.add_argument("--encoder-threads", type=int, choices=range(1, 17), default=2)
     ev = sub.add_parser(
         "evaluate", help="Score one prediction per explicitly evaluated sample ID"
     )
@@ -120,6 +123,9 @@ def main(argv=None):
                     args.output,
                     args.input_kind,
                     clip_ids=args.clip_id,
+                    ffmpeg=args.ffmpeg,
+                    ffprobe=args.ffprobe,
+                    encoder_threads=args.encoder_threads,
                 )
             )
         elif args.command == "evaluate":

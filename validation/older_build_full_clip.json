@@ -1,0 +1,14 @@
+{
+  "audio": {
+    "rebuilt": "8eb1ef208a5f046f27c87247501ddda3ee5399c354a49cfc292c36af8c7459e8",
+    "reference": "1349e4f3f3dc501e37953b7e8f2437be97fe2de40813e2d957461673d318bcf7"
+  },
+  "audio_exact": false,
+  "clip_id": "EYX_ijEC-ps_900_1200",
+  "scope": "all decoded frames/audio; container metadata bytes excluded",
+  "video": {
+    "rebuilt": "deecdb02b9db671ed924fd1741016346be6357b2f946262fc5e3f2fd626d92e7",
+    "reference": "59c090cfc3bafec48d9ae431453b0a10ccd406e005ec782f639f2b8641a1f492"
+  },
+  "video_exact": false
+}

@@ -23,9 +23,9 @@ realsync prepare --manifests manifests --input /path/to/encoded-segments \
   --output /path/to/new-cropped --input-kind encoded-segments
 ```
 
-Use repeated `--clip-id` arguments for a small verification run. Preparation is serial and limits encoding/decoding threads to two. It uses CPU processing, writes a provenance log, and keeps input files intact.
+Use repeated `--clip-id` arguments for a small verification run. Preparation is serial and defaults to two encoding/decoding threads. `--encoder-threads` accepts 1–16; `--ffmpeg` and `--ffprobe` select explicit binaries. It uses CPU processing, writes a provenance log, and keeps input files intact.
 
-The old files identify older FFmpeg encoder/muxer versions. The newly bounded re-encoding path has not yet been proven byte-equivalent to the historical encoder. Reproducing the crop from an existing encoded segment and rebuilding the complete chain from a full source are different claims.
+The old files identify older FFmpeg encoder/muxer versions. The audited encoder string identifies x264 core 155 r2917 and eight threads for one landscape clip. Available FFmpeg 4.2.2 with eight threads reproduces a checked 5-second sample's decoded arrays exactly, but full-clip fingerprints differ. The default modern build also differs. Broader historical-toolchain and boundary verification remains necessary. Reproducing the crop from an existing encoded segment and rebuilding the complete chain from a full source are different claims.
 
 ## Full source videos
 

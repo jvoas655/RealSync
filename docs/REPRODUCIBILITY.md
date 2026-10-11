@@ -10,8 +10,11 @@ This repository releases the author-selected cleaned uniform-offset collection. 
 - The 670 source-video IDs are disjoint across train, validation, and test.
 - Synthetic reader tests prove repeated reads are identical, positive offsets select later audio, incomplete windows fail, gzip exports are deterministic, and output/input path guards work.
 - The recovered stream-copy crop reproduces all packet payloads and timestamps for three checked clips, using existing historical re-encoded inputs. This does not establish full-chain equivalence from raw or full source videos.
+- An independent metadata rebuild reproduces all 16 exported artifacts byte for byte, including the archived CSV files.
+- All 11,039 selected prepared files are present and probe as H.264 / 25 fps / shortest side 256, with AAC / 16 kHz / mono audio. This is a header inventory, not exhaustive decoding of every file.
+- One frozen 5-second sample rebuilt from a historical raw segment using FFmpeg 4.2.2 and eight encoder threads has identical decoded video and audio. A comparison over the complete clip does not match; matching that sample is not evidence of complete-clip equivalence. Modern FFmpeg 4.4.2 with two encoder threads also differs. Both comparisons are retained in `validation/`.
 
-Evidence is stored in `validation/`. Reference-media format inventory is being built separately and must be distinguished from end-to-end content/timeline verification.
+Evidence is stored in `validation/`. The per-clip header inventory is in `manifests/reference_media.jsonl.gz` and must be distinguished from end-to-end content/timeline verification.
 
 ## Remaining work before a complete reconstruction release
 
@@ -26,6 +29,8 @@ Until these are resolved, a metadata/tooling prerelease is reproducible at the m
 ## Preserved facts and differences
 
 The paper reports 670 videos, 11,124 clips, and 927 hours. The cleaned collection selected for this release has 11,039 clips and 919.917 nominal hours. Recorded buffered raw durations sum to a larger value. These quantities are not interchangeable. No extra clips have been silently added or removed to reconcile them.
+
+The author selected the cleaned uniform-offset set for this release. Section 3.1 of the paper describes truncated-normal evaluation sampling. The stored uniform draws are preserved; this release must be identified as the cleaned uniform-offset collection rather than silently presented as the paper's normal-offset protocol.
 
 Historical filenames `test` and `evaluation` map to validation and test respectively in the original StreamSync loader. The selected cleaned manifests are distinct and disjoint. A different server directory contains duplicate manifests; those files are not part of this release.
 

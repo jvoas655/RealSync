@@ -14,6 +14,7 @@ All times are seconds. Sample floats are the exact values parsed from historical
 | `legacy/*.json.gz`, `legacy/*.csv.gz` | Exact historical sample JSON/CSV bytes and ordering, compressed deterministically. |
 | `provenance.json` | Hashes of the historical artifacts and the split-name mapping. |
 | `summary.json` | Counts, labels, annotation coverage, and nominal duration. |
+| `reference_media.jsonl.gz` | Observed prepared-file sizes, stream formats, and container/stream timing headers. No media payloads. |
 
 Historical names map as follows: `train` → train, `test` → validation, `evaluation` → test. This mapping follows the historical StreamSync dataset loader. The cleaned source IDs are disjoint across all three splits.
 

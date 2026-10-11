@@ -81,6 +81,7 @@ def prepare(
     clip_ids=None,
     ffmpeg="ffmpeg",
     ffprobe="ffprobe",
+    encoder_threads=2,
 ):
     """Port of recovered reencode + stream-copy crop commands.
 
@@ -88,6 +89,8 @@ def prepare(
     No guessed original-video timeline is ever used.
     """
     input_root = Path(input_root).resolve()
+    if not 1 <= encoder_threads <= 16:
+        raise ValueError("Encoder threads must be between 1 and 16")
     selected = sorted(clip_ids if clip_ids is not None else manifest.clips)
     if kind == "full-sources":
         unknown = [
@@ -152,7 +155,7 @@ def prepare(
                 "-vcodec",
                 "libx264",
                 "-threads",
-                "2",
+                str(encoder_threads),
                 "-pix_fmt",
                 "yuv420p",
                 "-crf",
