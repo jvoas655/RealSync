@@ -4,7 +4,9 @@ Metadata and reconstruction tooling for **Temporally Streaming Audio-Visual Sync
 
 [Paper](https://openaccess.thecvf.com/content/WACV2025/papers/Voas_Temporally_Streaming_Audio-Visual_Synchronization_for_Real-World_Videos_WACV_2025_paper.pdf) · [Supplement](https://openaccess.thecvf.com/content/WACV2025/supplemental/Voas_Temporally_Streaming_Audio-Visual_WACV_2025_supplemental.pdf) · [StreamSync](https://github.com/jvoas655/StreamSync)
 
-**Release status: recovered metadata and tooling; complete reconstruction from full source videos is pending.** The cleaned uniform-offset manifests and saved BEATs audio-event outputs are frozen and verified. Original source-segment cutting rules remain unrecovered. Do not treat this version as a complete reproduction of the paper. See [reproducibility status](docs/REPRODUCIBILITY.md).
+**Release v0.1.0: verified manifests, annotations, and tools.** The cleaned uniform-offset manifests and saved BEATs audio-event outputs are frozen and verified. Complete reconstruction from full source videos remains pending: original cutting rules, exact historical re-encoding, and annotation registration to prepared-media timestamps still need verification. See [reproducibility status](docs/REPRODUCIBILITY.md).
+
+[Download v0.1.0](https://github.com/jvoas655/RealSync/releases/tag/v0.1.0) includes a metadata archive and SHA-256 checksum. The tagged repository also contains the reader, preparation tools, documentation, and validation evidence.
 
 No original videos, audio, thumbnails, face crops, or media embeddings are distributed. Researchers obtain source videos themselves; the source URLs and IDs are listed in `manifests/sources.jsonl`.
 
