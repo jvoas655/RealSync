@@ -1,0 +1,16 @@
+{
+  "clips_with_recorded_input_path": 10368,
+  "different_output_files": [],
+  "identical_output_files": 11039,
+  "missing_output_files": [],
+  "recorded_input_roots": [
+    "videos_at_25fps-encode_script"
+  ],
+  "script_hashes": {
+    "get_videofile_list.py": "abe2197ed8587803bdd3c80b8cbfa80a1f8143f8c6566b6843dc5e72a2810f17",
+    "run_pipeline_new.py": "d41f8efee23f7d69dc3d833eecd8d547d2325f04a40a60e13f98700a3a118100",
+    "runner.py": "e5e4e4d15acd428aad2950104fbbf6619a3ca9caf0714feec7831b411fc9aaf5"
+  },
+  "selected_clips": 11039,
+  "timing_observation": "The runner probes first decoded A/V PTS, trims at max(first_pts) if positive, re-encodes to 25fps AVI, then indexes tracks by frame/25. Annotation time is relative to that AVI decode, not proven prepared-media PTS."
+}
