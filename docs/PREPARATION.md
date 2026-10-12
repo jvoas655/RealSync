@@ -1,5 +1,7 @@
 # Preparation
 
+Start with the [reconstruction walkthrough](RECONSTRUCTION.md) for installation, input selection, media layout, validation, deterministic sample reads, and availability reporting. This page details the recovered historical encoding/cropping recipe.
+
 Obtain source videos independently using the IDs in `manifests/sources.jsonl`. A directory of current full videos cannot yet be converted into the exact historical collection: the original segment-cutting/timestamp rules are still being recovered. Do not approximate those rules from filenames and call the output an exact reconstruction.
 
 ## Existing historical segments

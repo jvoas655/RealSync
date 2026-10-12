@@ -4,6 +4,8 @@ Metadata and reconstruction tooling for **Temporally Streaming Audio-Visual Sync
 
 [Paper](https://openaccess.thecvf.com/content/WACV2025/papers/Voas_Temporally_Streaming_Audio-Visual_Synchronization_for_Real-World_Videos_WACV_2025_paper.pdf) · [Supplement](https://openaccess.thecvf.com/content/WACV2025/supplemental/Voas_Temporally_Streaming_Audio-Visual_WACV_2025_supplemental.pdf) · [StreamSync](https://github.com/jvoas655/StreamSync)
 
+[Dataset guide](docs/DATASET_GUIDE.md) · [Reconstruction walkthrough](docs/RECONSTRUCTION.md) · [Citations and contributions](docs/CITATIONS.md) · [Subsequent BMVC 2025 paper](https://bmvc2025.bmva.org/proceedings/903/)
+
 **Release v0.1.0: verified manifests, annotations, and tools.** The cleaned uniform-offset manifests and saved BEATs audio-event outputs are frozen and verified. Complete reconstruction from full source videos remains pending: original cutting rules, exact historical re-encoding, and annotation registration to prepared-media timestamps still need verification. See [reproducibility status](docs/REPRODUCIBILITY.md).
 
 [Download v0.1.0](https://github.com/jvoas655/RealSync/releases/tag/v0.1.0) includes a metadata archive and SHA-256 checksum. The tagged repository also contains the reader, preparation tools, documentation, and validation evidence.
@@ -60,7 +62,8 @@ The reference reader uses manifest timestamps directly and fails explicitly on i
 
 ## Reconstruction and evaluation
 
-- [Preparation instructions and current limits](docs/PREPARATION.md)
+- [Reconstruction walkthrough](docs/RECONSTRUCTION.md)
+- [Technical preparation details and current limits](docs/PREPARATION.md)
 - [Manifest schema and coordinate conventions](docs/SCHEMA.md)
 - [Evaluation and reporting available subsets](docs/EVALUATION.md)
 - [Evidence, provenance, and remaining reconstruction work](docs/REPRODUCIBILITY.md)
@@ -70,6 +73,8 @@ The complete original JSON manifests are also preserved as compressed files in `
 ## Citation and licenses
 
 Please cite the WACV paper and identify the RealSync release tag used. `CITATION.cff` provides the paper citation. Code is MIT licensed; released metadata/annotations use CC BY 4.0 as described in [DATA_LICENSE.md](DATA_LICENSE.md). Neither license grants rights to source videos.
+
+The [citation guide](docs/CITATIONS.md) explains source-publisher attribution, S3FD/SyncNet face annotations, BEATs/AudioSet event annotations, and the SparseSync model/code lineage. It also includes the [BMVC 2025 AS-Synchformer paper](https://bmvc2025.bmva.org/proceedings/903/), which uses RealSync in its transfer-performance comparisons. Full BibTeX entries are available in [CITATIONS.bib](docs/CITATIONS.bib).
 
 ```bibtex
 @InProceedings{Voas_2025_WACV,

@@ -3,6 +3,7 @@ message: "Please cite the WACV 2025 paper and report the RealSync release tag/co
 type: dataset
 title: "RealSync: cleaned uniform-offset metadata and reconstruction tooling"
 version: 0.1.0
+date-released: "2026-10-11"
 url: "https://github.com/jvoas655/RealSync"
 authors:
   - family-names: Voas
@@ -19,6 +20,26 @@ authors:
     given-names: James
   - family-names: Harwath
     given-names: David
+references:
+  - type: conference-paper
+    title: "Toward Robust Audio-Visual Synchronization Detection in Egocentric Video with Sparse Synchronization Events"
+    year: 2025
+    url: "https://bmvc2025.bmva.org/proceedings/903/"
+    conference:
+      name: "British Machine Vision Conference (BMVC)"
+    authors:
+      - family-names: Voas
+        given-names: Jordan
+      - family-names: Tseng
+        given-names: Wei-Cheng
+      - family-names: Vallade
+        given-names: Benoit
+      - family-names: Mackin
+        given-names: Alex
+      - family-names: Higham
+        given-names: David
+      - family-names: Harwath
+        given-names: David
 preferred-citation:
   type: conference-paper
   title: "Temporally Streaming Audio-Visual Synchronization for Real-World Videos"
