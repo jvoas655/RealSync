@@ -1,0 +1,180 @@
+{
+  "all_prediction_records_validated": true,
+  "by_split": {
+    "test": {
+      "observed": 613,
+      "windows": 35481
+    },
+    "train": {
+      "observed": 9808,
+      "windows": 575886
+    },
+    "val": {
+      "observed": 618,
+      "windows": 36268
+    }
+  },
+  "clips": 11039,
+  "counts": {
+    "observed": 11039,
+    "retained_predictions": 2101390,
+    "windows": 647635,
+    "windows_without_retained_labels": 870
+  },
+  "empty_file_clip_ids": [],
+  "historical_text_bytes": 44038876,
+  "historical_text_round_trip_exact": true,
+  "label_map_classes": 527,
+  "missing_clip_ids": [],
+  "retained_label_classes": 521,
+  "top_retained_labels": [
+    {
+      "display_name": "Speech",
+      "mid": "/m/09x0r",
+      "windows": 620411
+    },
+    {
+      "display_name": "Narration, monologue",
+      "mid": "/m/02qldy",
+      "windows": 266500
+    },
+    {
+      "display_name": "Male speech, man speaking",
+      "mid": "/m/05zppz",
+      "windows": 255123
+    },
+    {
+      "display_name": "Music",
+      "mid": "/m/04rlf",
+      "windows": 173941
+    },
+    {
+      "display_name": "Female speech, woman speaking",
+      "mid": "/m/02zsn",
+      "windows": 116008
+    },
+    {
+      "display_name": "Basketball bounce",
+      "mid": "/m/018w8",
+      "windows": 82255
+    },
+    {
+      "display_name": "Conversation",
+      "mid": "/m/01h8n0",
+      "windows": 75141
+    },
+    {
+      "display_name": "Silence",
+      "mid": "/m/028v0c",
+      "windows": 55281
+    },
+    {
+      "display_name": "Run",
+      "mid": "/m/06h7j",
+      "windows": 27560
+    },
+    {
+      "display_name": "Speech synthesizer",
+      "mid": "/m/0brhx",
+      "windows": 27267
+    },
+    {
+      "display_name": "Applause",
+      "mid": "/m/028ght",
+      "windows": 23680
+    },
+    {
+      "display_name": "Outside, urban or manmade",
+      "mid": "/t/dd00128",
+      "windows": 22701
+    },
+    {
+      "display_name": "Slam",
+      "mid": "/m/07rjzl8",
+      "windows": 20674
+    },
+    {
+      "display_name": "Inside, small room",
+      "mid": "/t/dd00125",
+      "windows": 17996
+    },
+    {
+      "display_name": "Vehicle",
+      "mid": "/m/07yv9",
+      "windows": 15223
+    },
+    {
+      "display_name": "Chuckle, chortle",
+      "mid": "/m/07rgt08",
+      "windows": 12540
+    },
+    {
+      "display_name": "Crowd",
+      "mid": "/m/03qtwd",
+      "windows": 12501
+    },
+    {
+      "display_name": "Clip-clop",
+      "mid": "/m/07rv9rh",
+      "windows": 12383
+    },
+    {
+      "display_name": "Inside, public space",
+      "mid": "/t/dd00127",
+      "windows": 9484
+    },
+    {
+      "display_name": "Animal",
+      "mid": "/m/0jbk",
+      "windows": 8544
+    }
+  ],
+  "windows_per_observed_clip": {
+    "5": 1,
+    "9": 1,
+    "10": 2,
+    "12": 1,
+    "13": 3,
+    "15": 2,
+    "17": 1,
+    "18": 1,
+    "20": 1,
+    "21": 1,
+    "22": 2,
+    "23": 3,
+    "24": 2,
+    "25": 1,
+    "26": 1,
+    "29": 1,
+    "30": 1,
+    "31": 2,
+    "32": 2,
+    "33": 2,
+    "34": 1,
+    "36": 1,
+    "37": 3,
+    "38": 1,
+    "39": 6,
+    "40": 8,
+    "41": 6,
+    "42": 7,
+    "43": 13,
+    "44": 6,
+    "45": 13,
+    "46": 8,
+    "47": 13,
+    "48": 18,
+    "49": 11,
+    "50": 9,
+    "51": 13,
+    "52": 9,
+    "53": 11,
+    "54": 7,
+    "55": 22,
+    "56": 8,
+    "57": 11,
+    "58": 684,
+    "59": 9761,
+    "60": 358
+  }
+}

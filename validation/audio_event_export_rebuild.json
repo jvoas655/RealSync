@@ -1,0 +1,18 @@
+{
+  "audio_event_inventory.json": {
+    "byte_exact": true,
+    "sha256": "5313cb3a6076ddba12e2923e1f21489f37c06d01308674428d0c592158ead751"
+  },
+  "audio_event_labels.jsonl": {
+    "byte_exact": true,
+    "sha256": "9adc21daa0e441bc183394a165556df15760e994b9b24bf429e58eefc8aa0bbe"
+  },
+  "audio_event_provenance.json": {
+    "byte_exact": true,
+    "sha256": "62b6745793855aa650be1046eac39cda1933bfaa0c9fd7a470af482116c3db61"
+  },
+  "audio_events.jsonl.gz": {
+    "byte_exact": true,
+    "sha256": "1571ba6dca4e61d804bc8225167d7debebaa22d39113ef0f28201b1149b9ff97"
+  }
+}

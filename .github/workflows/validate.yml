@@ -17,5 +17,6 @@ jobs:
           OPENBLAS_NUM_THREADS: '1'
           OMP_NUM_THREADS: '1'
       - run: realsync audit --manifests manifests
+      - run: python tools/verify_audio_events.py
       - run: python tools/check_publication.py
       - run: sha256sum -c SHA256SUMS

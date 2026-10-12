@@ -1,0 +1,23 @@
+{
+  "checkpoint_sha256": "7f9362028ac6e5c049e8dc314d87e90e4f82a15a8e472deb56af55d7f9b34d6a",
+  "coordinate_caveat": "Window zero is the first extracted WAV sample, not proven PTS zero. Do not silently join these times to video PTS.",
+  "coordinate_system": "decoded_pcm_sample_index",
+  "extraction": "FFmpeg AAC decode to mono 16 kHz PCM s16le WAV; torchaudio.load",
+  "hop_sec": 5,
+  "inference_script_sha256": "b21a54f1035eb038bc95c6f4d344e7ca0a9048e59caab7be54bd3f6834909df4",
+  "input_kind": "saved historical BEATs top-10 text predictions; no inference rerun",
+  "input_media": "cropped_videos_at_25fps (historical script default)",
+  "label_map_sha256": "cdd1049833c4b86127c2773ac0d14a2754b6a6d0d1798002ed5c66e699708429",
+  "model_code": {
+    "BEATs.py": "27f289db7c56ce26f2ceb50d3719854b91b2dec1c2830d8b1dd8de1bbee19eeb",
+    "backbone.py": "31c0378379a7e0f1d1069f9da444fb86890fe1ea078959a2dcd39640cdcadbaa",
+    "modules.py": "edeb6b6cd6a784da749f932c3e0783c0bce556fc768d0d23a4d53d4b819eb424"
+  },
+  "origin_in_prepared_pts_sec": null,
+  "probability_decimal_places": 4,
+  "retention_threshold": 0.1,
+  "sample_rate": 16000,
+  "start_loop_stop_sec": 300,
+  "top_k": 10,
+  "window_length_sec": 10
+}

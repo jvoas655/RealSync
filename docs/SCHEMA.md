@@ -10,6 +10,9 @@ All times are seconds. Sample floats are the exact values parsed from historical
 | `clips.jsonl.gz` | Stable clip ID, relative filename, nominal source boundaries, historical durations, and source-origin recovery status. |
 | `train.jsonl.gz`, `val.jsonl.gz`, `test.jsonl.gz` | Frozen sample positions and offsets with effective float32 class labels. |
 | `annotations/*.jsonl.gz` | Saved intervals in historical annotation-clip coordinates. |
+| `annotations/audio_events.jsonl.gz` | Per-clip saved BEATs windows, retained AudioSet MIDs/probabilities, and original text checksums. |
+| `annotations/audio_event_labels.jsonl` | All 527 AudioSet MIDs and readable class names. |
+| `annotations/audio_event_provenance.json` | Model/script fingerprints, windowing, retention, and PCM timing conventions. |
 | `annotations/errors.json` | Clips with recorded annotation failures. |
 | `legacy/*.json.gz`, `legacy/*.csv.gz` | Exact historical sample JSON/CSV bytes and ordering, compressed deterministically. |
 | `provenance.json` | Hashes of the historical artifacts and the split-name mapping. |
@@ -35,3 +38,13 @@ The direct-timeline reference view extracts video at `video_start_sec` and audio
 `nominal_source_start_sec` and `nominal_source_end_sec` come from historical clip filenames. **They do not establish the exact source origin of the stored clip.** Raw segments have extra context and can contain leading undecodable video frames. `source_origin_sec` is currently null, and full-source preparation refuses to guess it.
 
 Historical track lengths are decoded lengths used by the cleaning scripts, not necessarily container duration or timestamp endpoints. Saved face-sync annotation intervals have their own historical clip coordinate system; exact registration to the cropped clips remains to be verified. A missing annotation record, an error record, and an observed empty interval list are distinct states.
+
+## Audio-event annotations
+
+Each record contains `clip_id`, `status`, `windows`, `sample_rate`, `coordinate_system`, `origin_in_prepared_pts_sec`, and a SHA-256 checksum of the historical prediction text. Each window stores `start_sec`, `end_sec`, and `labels`; each label stores its AudioSet `mid` and retained `probability`. Use MIDs for joins: the model's classifier order differs from the standard AudioSet CSV index order.
+
+The recovered inference script defaults to the prepared cropped clips, extracts mono 16 kHz PCM s16le WAV using FFmpeg, loads it with torchaudio, and indexes that decoded waveform. Windows are 10 seconds long with a 5-second hop. Its start loop stops before 300 seconds, so a sufficiently long clip can have a final window from 295 to 305 seconds. Only complete windows are processed.
+
+The script stores the top 10 classes whose probability is at least 0.1, rounded to four decimal places. An omitted class is not assigned probability zero; full logits/probabilities cannot be recovered from these outputs. A window with no retained labels remains a valid observed window. The saved statistics script separately uses a 0.5 reporting threshold; that threshold was not used to discard the released predictions.
+
+The coordinate system is `decoded_pcm_sample_index`: zero is the first extracted WAV sample. It is not automatically the prepared file's PTS zero, the first video frame, or a nominal source-video boundary. `origin_in_prepared_pts_sec` remains null until that registration is verified. The text can be reconstructed byte for byte from the stored windows and probabilities; this verifies annotation preservation, not media reconstruction or repeated model-inference equivalence.

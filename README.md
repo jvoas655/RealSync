@@ -4,7 +4,7 @@ Metadata and reconstruction tooling for **Temporally Streaming Audio-Visual Sync
 
 [Paper](https://openaccess.thecvf.com/content/WACV2025/papers/Voas_Temporally_Streaming_Audio-Visual_Synchronization_for_Real-World_Videos_WACV_2025_paper.pdf) · [Supplement](https://openaccess.thecvf.com/content/WACV2025/supplemental/Voas_Temporally_Streaming_Audio-Visual_WACV_2025_supplemental.pdf) · [StreamSync](https://github.com/jvoas655/StreamSync)
 
-**Release status: recovered metadata and tooling; complete reconstruction from full source videos is pending.** The cleaned uniform-offset manifests are frozen and verified. Original source-segment cutting rules and the BEATs audio-event outputs have not yet been recovered. Do not treat this version as a complete reproduction of the paper. See [reproducibility status](docs/REPRODUCIBILITY.md).
+**Release status: recovered metadata and tooling; complete reconstruction from full source videos is pending.** The cleaned uniform-offset manifests and saved BEATs audio-event outputs are frozen and verified. Original source-segment cutting rules remain unrecovered. Do not treat this version as a complete reproduction of the paper. See [reproducibility status](docs/REPRODUCIBILITY.md).
 
 No original videos, audio, thumbnails, face crops, or media embeddings are distributed. Researchers obtain source videos themselves; the source URLs and IDs are listed in `manifests/sources.jsonl`.
 
@@ -21,6 +21,8 @@ The author-selected **cleaned uniform-offset collection** contains 670 source vi
 No source video is shared between splits. Sample positions and continuous offsets are preserved exactly. Effective offsets are rounded to two decimals, then classified on the historical 21-class float32 grid between −2 and +2 seconds. Positive offsets extract audio from a later source time: the audible event leads its visual counterpart.
 
 Saved talking-head/voice-over intervals cover 10,957 clips; 82 clips have recorded annotation errors. Empty intervals mean no detected intervals, not missing annotation. Annotation timeline registration is still under review. Older normal-offset and duplicate server manifests are excluded.
+
+Saved BEATs audio-event predictions cover all 11,039 selected clips: 647,635 overlapping 10-second windows and 2,101,390 retained label probabilities. These preserve the original top-10 predictions retained at probability ≥ 0.1, rounded to four decimals. They are model predictions, not human labels or complete probability vectors. See [annotation conventions](docs/SCHEMA.md#audio-event-annotations).
 
 The paper reports 11,124 clips / 927 hours. This release preserves the explicitly selected cleaned collection rather than silently expanding it to match those headline numbers. Its nominal clip duration sums to 919.917 hours; buffered file duration is a different quantity.
 
